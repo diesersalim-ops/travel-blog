@@ -1,0 +1,17 @@
+:root {
+  --color-header: #4EA487;
+  --color-header-dark: #21654e;
+  --color-accent: #E9B44C;
+  --color-accent-dark: #d9a238;
+  --color-btn: #3B945E;
+  --color-btn-dark: #2f7a4b;
+  --color-text: #1f2d28;
+  --color-text-light: #4a5a54;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f4f7f5;
+  --color-border: #e1e6e3;
+  --transition-fast: 100ms ease;
+  --max-width: 1440px;
+  --font-heading: 'Baloo 2', 'Poppins', sans-serif;
+  --font-body: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
