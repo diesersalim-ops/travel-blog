@@ -4,7 +4,7 @@
 @import "components.css";
 @import "mobile.css";
 
-/* ---------- Bonus: load-in animation ---------- */
+/* ---------- load-in animation ---------- */
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
