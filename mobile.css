@@ -8,6 +8,10 @@
     padding-bottom: 60px;
   }
 
+  .site-footer {
+    display: none;
+  }
+
   .mobile-tabbar {
     display: flex;
     justify-content: space-around;
