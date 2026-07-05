@@ -1,8 +1,9 @@
 :root {
   --color-header: #4EA487;
   --color-header-dark: #21654e;
-  --color-accent: #E9B44C;
-  --color-accent-dark: #d9a238;
+  --color-h1: rgba(241, 201, 83, 1);
+  --color-accent: hsl(40, 78%, 61%);
+  --color-accent-dark: hsl(40, 68%, 54%);
   --color-btn: #3B945E;
   --color-btn-dark: #2f7a4b;
   --color-text: #1f2d28;

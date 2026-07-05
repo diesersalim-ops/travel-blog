@@ -464,7 +464,7 @@
   margin-bottom: 8px;
 }
 
-.article-heading-block h1 {
+.article-heading-block {
   font-size: 1.6rem;
   margin-bottom: 12px;
   color: var(--color-text);
