@@ -467,7 +467,6 @@
   color: var(--color-header);
   font-family: 'Palanquin';
   font-weight: 600;
-  margin-bottom: 8px;
   font-size: 2.5rem;
 }
 
@@ -479,16 +478,18 @@
 
 .article-intro {
   color: var(--color-text-light);
-  line-height: 1.7;
-  max-width: 640px;
+  line-height: 1.1;
+  max-width: 900px;
+  font-size: 28px;
+  font-family: 'Palanquin';
 }
 
 .article-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 32px;
   margin-top: 16px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--color-text-light);
 }
 

@@ -53,6 +53,7 @@ h1{
   font-family: 'Arima';
   font-size: 64px;
   color: rgba(241, 201, 83, 1);
+  line-height: 1.2;
 }
 
 h2, h3 {
