@@ -465,8 +465,10 @@
 
 .article-kicker {
   color: var(--color-header);
+  font-family: 'Palanquin';
   font-weight: 600;
   margin-bottom: 8px;
+  font-size: 2.5rem;
 }
 
 .article-heading-block {
