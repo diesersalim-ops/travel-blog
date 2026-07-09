@@ -625,10 +625,13 @@
 
 /* Article text content */
 .article-body {
-  max-width: 760px;
+  max-width: 1440px;
   margin: 0 auto;
   line-height: 1.8;
   color: var(--color-text);
+  font-family: 'Palanquin';
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 .article-body p {
@@ -925,6 +928,9 @@
 .follow-share {
   text-align: center;
   margin: 40px 0;
+  font-family: 'Palanquin';
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 .follow-share p {
