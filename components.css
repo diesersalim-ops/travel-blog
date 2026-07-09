@@ -73,7 +73,9 @@
 }
 
 @media (max-width: 767px) {
-  .header-inner { justify-content: space-between; }
+  .header-inner {
+    justify-content: space-between;
+  }
 }
 
 /* .nav-links a {
@@ -171,11 +173,15 @@
 }
 
 @media (min-width: 768px) {
-  .promo-banner { height: 260px; }
+  .promo-banner {
+    height: 260px;
+  }
 }
 
 @media (min-width: 1440px) {
-  .promo-banner { height: 320px; }
+  .promo-banner {
+    height: 320px;
+  }
 }
 
 /* ---------- Beach Fan (Highlights) ---------- */
@@ -572,9 +578,18 @@
 }
 
 @media (min-width: 1440px) {
-  .article-head { padding-top: 80px; gap: 48px; }
-  .article-carousel { margin-bottom: 88px; }
-  .article-carousel-title { margin-top: 0; }
+  .article-head {
+    padding-top: 80px;
+    gap: 48px;
+  }
+
+  .article-carousel {
+    margin-bottom: 88px;
+  }
+
+  .article-carousel-title {
+    margin-top: 0;
+  }
 }
 
 .article-carousel-track-wrap {
@@ -601,15 +616,34 @@
 }
 
 @media (min-width: 768px) {
-  .article-carousel-track-wrap { height: 420px; }
-  .article-carousel-track .slide { width: 180px; }
+  .article-carousel-track-wrap {
+    height: 420px;
+  }
+
+  .article-carousel-track .slide {
+    width: 180px;
+  }
 }
 
-.slide-bg-3 { background: linear-gradient(135deg, #7fd6c2, #2a9d8f 55%, #16645a); }
-.slide-bg-4 { background: linear-gradient(135deg, #ffd76e, #f2a65a 55%, #c9773a); }
-.slide-bg-5 { background: linear-gradient(135deg, #8ec7f2, #4d8fc9 55%, #2c5c8a); }
-.slide-bg-6 { background: linear-gradient(135deg, #f2a6c1, #d9628f 55%, #9c3f66); }
-.slide-bg-7 { background: linear-gradient(135deg, #b5e0a3, #78b95e 55%, #4a7d38); }
+.slide-bg-3 {
+  background: linear-gradient(135deg, #7fd6c2, #2a9d8f 55%, #16645a);
+}
+
+.slide-bg-4 {
+  background: linear-gradient(135deg, #ffd76e, #f2a65a 55%, #c9773a);
+}
+
+.slide-bg-5 {
+  background: linear-gradient(135deg, #8ec7f2, #4d8fc9 55%, #2c5c8a);
+}
+
+.slide-bg-6 {
+  background: linear-gradient(135deg, #f2a6c1, #d9628f 55%, #9c3f66);
+}
+
+.slide-bg-7 {
+  background: linear-gradient(135deg, #b5e0a3, #78b95e 55%, #4a7d38);
+}
 
 .slide-label {
   position: absolute;
@@ -821,12 +855,10 @@
   height: 180px;
   border-radius: 50%;
   margin: 0 auto 16px;
-  background: conic-gradient(
-    var(--color-header) 0% 30%,
-    var(--color-accent) 30% 55%,
-    var(--color-btn) 55% 75%,
-    #c97f56 75% 100%
-  );
+  background: conic-gradient(var(--color-header) 0% 30%,
+      var(--color-accent) 30% 55%,
+      var(--color-btn) 55% 75%,
+      #c97f56 75% 100%);
   position: relative;
 }
 
@@ -844,8 +876,13 @@
   font-size: 1.4rem;
 }
 
-.donut-deco.deco-left { left: -18px; }
-.donut-deco.deco-right { right: -18px; }
+.donut-deco.deco-left {
+  left: -18px;
+}
+
+.donut-deco.deco-right {
+  right: -18px;
+}
 
 .donut-legend {
   list-style: none;
@@ -871,10 +908,21 @@
   flex-shrink: 0;
 }
 
-.legend-dot.c1 { background: var(--color-header); }
-.legend-dot.c2 { background: var(--color-accent); }
-.legend-dot.c3 { background: var(--color-btn); }
-.legend-dot.c4 { background: #c97f56; }
+.legend-dot.c1 {
+  background: var(--color-header);
+}
+
+.legend-dot.c2 {
+  background: var(--color-accent);
+}
+
+.legend-dot.c3 {
+  background: var(--color-btn);
+}
+
+.legend-dot.c4 {
+  background: #c97f56;
+}
 
 .compare-bars {
   display: flex;
@@ -905,10 +953,25 @@
   white-space: nowrap;
 }
 
-.compare-bar.b1 { background: var(--color-accent); height: 40%; }
-.compare-bar.b2 { background: var(--color-btn); height: 55%; }
-.compare-bar.b3 { background: var(--color-header); height: 100%; }
-.compare-bar.b4 { background: #c97f56; height: 70%; }
+.compare-bar.b1 {
+  background: var(--color-accent);
+  height: 40%;
+}
+
+.compare-bar.b2 {
+  background: var(--color-btn);
+  height: 55%;
+}
+
+.compare-bar.b3 {
+  background: var(--color-header);
+  height: 100%;
+}
+
+.compare-bar.b4 {
+  background: #c97f56;
+  height: 70%;
+}
 
 .compare-labels {
   display: flex;
@@ -926,6 +989,10 @@
 
 /* ---------- Follow / Share ---------- */
 .follow-share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   text-align: center;
   margin: 40px 0;
   font-family: 'Palanquin';
@@ -934,6 +1001,7 @@
 }
 
 .follow-share p {
+  max-width: 500px;
   color: var(--color-text-light);
   margin-bottom: 16px;
 }
