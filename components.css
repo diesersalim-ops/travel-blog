@@ -469,10 +469,6 @@
   padding-bottom: 24px;
 }
 
-/* .article-heading-block {
-  flex: 1;
-} */
-
 .article-kicker {
   color: var(--color-header);
   font-family: 'Palanquin';
@@ -503,6 +499,14 @@
   color: var(--color-text-light);
 }
 
+@media screen and (max-width:480px){
+  .article-meta {
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+}
+
 .article-meta span {
   display: inline-flex;
   align-items: center;
@@ -510,6 +514,7 @@
 }
 
 /* Author box */
+/**************/
 .author-box {
   background: #dcece2;
   border-radius: 30px;
@@ -552,7 +557,7 @@
   margin-bottom: 16px;
 }
 
-.author-info p.author-bio {
+.author-bio {
   font-family: 'Palanquin';
   font-size: 1rem;
   line-height: 1.2;
@@ -567,7 +572,52 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width:1023px){
+  .author-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+
+  .author-bio{
+    max-width: 55%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .article-kicker{
+    font-size: 1.8rem;
+  }
+
+  h1{
+    font-size: 48px;
+  }
+
+  .article-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author-box {
+    max-width: unset;
+    width: clamp(288px, 90%, 720px);
+  }
+}
+
+@media screen and (max-width:480px){
+.article-kicker{
+    font-size: 1.1rem;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+}
+
 /* Article carousel (TOP destinations) */
+/***************************************/
 .article-carousel-title {
   text-align: center;
   margin: 32px 0 20px;
