@@ -469,9 +469,9 @@
   padding-bottom: 24px;
 }
 
-.article-heading-block {
+/* .article-heading-block {
   flex: 1;
-}
+} */
 
 .article-kicker {
   color: var(--color-header);
@@ -554,8 +554,8 @@
 
 .author-info p.author-bio {
   font-family: 'Palanquin';
-  font-size: 0.85rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.2;
   text-align: left;
 }
 
