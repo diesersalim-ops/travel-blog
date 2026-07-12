@@ -172,11 +172,16 @@
 .promo-banner {
   background-color: #F1C953;
   background-image: url(./images/cappodocia_img.png);
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   aspect-ratio: 3 / 1;
+  max-height: 515px;
+  /* position: relative; */
 }
+
+
 
 /* @media (min-width: 768px) {
   .promo-banner {
