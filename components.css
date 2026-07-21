@@ -206,37 +206,56 @@
 .beach-fan {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  padding: 24px 0 56px;
+  align-items: center;
+  padding: 40px 0 64px;
 }
 
 .beach-fan-card {
   display: block;
   flex-shrink: 0;
-  width: 300px;
-  margin: 0 -55px;
-  transform: rotate(var(--r));
-  transform-origin: bottom center;
-  transition: transform var(--transition-fast);
+  width: 170px;
+  aspect-ratio: 680 / 952;
+  margin-left: -46px;
+  position: relative;
+  perspective: 900px;
 }
+
+.beach-fan-card:first-child {
+  margin-left: 0;
+}
+
+.beach-fan-card:nth-child(1) { z-index: 1; }
+.beach-fan-card:nth-child(2) { z-index: 2; }
+.beach-fan-card:nth-child(3) { z-index: 3; }
+.beach-fan-card:nth-child(4) { z-index: 4; }
+.beach-fan-card:nth-child(5) { z-index: 5; }
 
 .beach-fan-card img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: none;
+  transform: rotateY(-12deg);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .beach-fan-card:hover {
-  transform: rotate(var(--r)) translateY(-16px);
-  z-index: 5;
+  z-index: 20;
+}
+
+.beach-fan-card:hover img {
+  transform: rotateY(0deg) translateY(-16px) scale(1.05);
 }
 
 @media (max-width: 767px) {
   .beach-fan-card {
-    width: 140px;
-    margin: 0 -30px;
+    width: 120px;
+    margin-left: -32px;
   }
 }
+
 
 
 .highlights-scroller {
