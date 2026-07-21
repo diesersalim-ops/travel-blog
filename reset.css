@@ -1,4 +1,4 @@
-/* ---------- Reset ---------- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -67,7 +67,7 @@ h2, h3 {
   color: var(--color-text);
 }
 
-/* ---------- Layout ---------- */
+
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -115,7 +115,7 @@ h2, h3 {
   font-size: 24px;
 }
 
-/* ---------- Buttons & Tags ---------- */
+
 .btn {
   display: inline-flex;
   align-items: center;
