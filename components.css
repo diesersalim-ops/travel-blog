@@ -1,4 +1,4 @@
-/* ---------- Header ---------- */
+
 .site-header {
   background: var(--color-header);
   width: 100%;
@@ -167,7 +167,7 @@
   background: var(--color-accent-dark);
 }
 
-/* ---------- Promo Banner ---------- */
+
 .promo-banner {
   background-color: #F1C953;
   background-image: url(./images/cappodocia_img.png);
@@ -194,7 +194,7 @@
   }
 } */
 
-/* ---------- Beach Fan (Highlights) ---------- */
+
 .beach-fan-title {
   font-family: 'Lora', serif;
   font-weight: 600;
@@ -238,8 +238,7 @@
   }
 }
 
-/* ---------- Highlights Scroller ---------- */
-/*********************************************/
+
 .highlights-scroller {
   display: flex;
   max-width: 1200px;
@@ -305,7 +304,7 @@
     linear-gradient(180deg, #2c2140 0%, #6a3f5c 32%, #d97b4f 50%, #f2b562 58%, #16222e 58.5%, #0f1a22 100%);
 }
 
-/* ---------- FAQ ---------- */
+
 .faq-list {
   max-width: 800px;
   margin: 0 auto;
@@ -362,7 +361,7 @@
   color: var(--color-text);
 }
 
-/* ---------- Contact Form ---------- */
+
 .contact-form {
   max-width: 800px;
   margin: 0 auto;
@@ -455,7 +454,7 @@
   color: #6b6b6b;
 }
 
-/* ---------- Article Layout ---------- */
+
 .article-head {
   display: flex;
   flex-direction: column;
@@ -508,8 +507,7 @@
   gap: 6px;
 }
 
-/* Author box */
-/**************/
+
 .author-box {
   background: #dcece2;
   border-radius: 30px;
@@ -611,8 +609,7 @@
   }
 }
 
-/* Article carousel (TOP destinations) */
-/***************************************/
+
 .article-carousel-title {
   text-align: center;
   margin: 32px 0 20px;
@@ -706,7 +703,7 @@
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Article text content */
+
 .article-body {
   max-width: 1440px;
   margin: 0 auto;
@@ -798,7 +795,7 @@
   border: none;
 }
 
-/* ---------- Charts (Graph article) ---------- */
+
 .chart-block {
   margin: 32px 0;
 }
@@ -913,8 +910,7 @@
 }
 
 
-/* ---------- Follow / Share ---------- */
-/****************************************/
+
 .follow-share {
   display: flex;
   flex-direction: column;
