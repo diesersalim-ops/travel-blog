@@ -1,0 +1,424 @@
+/******************** Font Faces ****************/
+/************************************************/
+
+/* arima-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/arima-v7-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* arima-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/arima-v7-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* arima-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/arima-v7-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/palanquin-v17-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/******************** Global Styles *************/
+/************************************************/
+
+body {
+  font-family: 'Palanquin';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: rgba(61, 61, 61, 1);
+}
+
+@media (max-width: 1279px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--secondary-brown);
+}
+
+@media (max-width: 1279px) {
+    h1 {
+        font-size: 38px;
+    }
+}
+
+h2 {
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-green);
+  margin: 24px;
+}
+
+@media (max-width: 1279px) {
+  h2 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-family: 'Palanquin';
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.0;
+  color: var(--carousel);
+}
+
+@media (max-width: 1279px) {
+  h3 {
+    font-size: 36px;
+    line-height: 1.0;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+.btn {
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: rgba(115, 115, 115, 1);
+}
+
+
+/******************** Header Section ************/
+/************************************************/
+
+nav a {
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.8;
+  color: var(--primary-white);
+}
+
+
+/******************** Main Section **************/
+/************************************************/
+
+/* --- Article Head & Meta --- */
+.article-kicker {
+  font-family: 'Palanquin';
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--primary-green);
+}
+
+@media (max-width: 1279px) {
+  .article-kicker {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-kicker {
+    font-size: 20px;
+  }
+}
+
+.article-h1 {
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  text-align: start;
+  color: var(--primary-yellow);
+}
+
+@media (max-width: 1279px) {
+  .article-h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-h1 {
+    font-size: 40px;
+  }
+}
+
+.article-h2 {
+  font-family: 'Arima';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--secondary-brown);
+}
+
+@media (max-width: 1279px) {
+  .article-h2 {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-h2 {
+    font-size: 20px;
+  }
+}
+
+.article-intro {
+  font-family: 'Palanquin';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1;
+  color: var(--secondary-brown);
+}
+
+@media (max-width: 1279px) {
+  .article-intro {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-intro {
+    font-size: 18px;
+  }
+}
+
+.article-meta {
+  font-family: 'Palanquin';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondary-brown);
+}
+
+/* --- Author Box --- */
+.author-info {
+  font-family: 'Arima';
+  color: var(--secondary-brown);
+  font-size: 1.12rem;
+}
+
+.author-name {
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--secondary-brown);
+}
+
+.author-role {
+  font-family: 'Arima';
+  font-weight: 400;
+  font-size: 1.12rem;
+  color: var(--secondary-brown);
+}
+
+.author-bio {
+  font-family: 'Palanquin';
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--secondary-brown);
+}
+
+/* --- Highlights & Scroller --- */
+.scroller-overlay-text p {
+  font-family: 'Palanquin';
+  font-size: 28px;
+  line-height: 1.1;
+  color: var(--carousel);
+}
+
+/* --- FAQ Section --- */
+.faq-question {
+  font-family: 'Palanquin';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--secondary-brown);
+}
+
+@media (max-width: 1279px) {
+  .faq-question {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    font-size: 16px;
+  }
+}
+
+.faq-answer {
+  font-family: 'Palanquin';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondary-brown);
+}
+
+/* --- Contact Form & Mixed Texts --- */
+.contact-form,
+#contact-heading p,
+.highlights-section p {
+  font-family: 'Palanquin';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--secondary-brown);
+}
+
+@media (max-width: 768px) {
+
+  .contact-form,
+  #contact-heading p,
+  .highlights-section p {
+    font-size: 24px;
+  }
+}
+
+.form-consent {
+  font-family: 'Palanquin';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--secondary-brown);
+}
+
+/* --- Pro Tipps Section --- */
+.pro-tipps-tag {
+  font-family: 'Palanquin';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--primary-yellow);
+}
+
+@media (max-width: 768px) {
+  .pro-tipps-tag span {
+    font-size: 20px;
+  }
+}
+
+.pro-tipps-section a {
+  font-family: 'Palanquin';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--primary-green);
+}
+
+@media (max-width: 1279px) {
+  .pro-tipps-section a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pro-tipps-section a {
+    font-size: 16px;
+  }
+}
+
+/* --- Follow Me Section --- */
+.follow-me-block p {
+  font-family: 'Arima';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--secondary-brown);
+}
+
+@media (max-width: 1279px) {
+  .follow-me-block p {
+    font-size: 21px;
+  }
+}
+
+/* --- Smartphone-Ansicht (unter 769px) --- */
+@media (max-width: 768px) {
+  .follow-me-block p {
+    font-size: 18px;
+  }
+}
+
+
+/******************** Footer Section ************/
+/************************************************/
+
+footer a {
+  font-family: 'Palanquin';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--primary-white);
+}

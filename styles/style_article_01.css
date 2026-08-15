@@ -1,0 +1,232 @@
+/********************Main Section****************/
+/************************************************/
+main {
+    margin: var(--main-frame);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/********************carousel-section****************/
+/***************************************************/
+.carousel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+@media (max-width: 1279px) {
+    .carousel-section {
+        gap: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-section {
+        gap: 0px;
+    }
+}
+
+/* --- 1. Globale & Desktop Carousel Styles --- */
+.rotating-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1350px;
+    height: 440px;
+    margin: 30px auto;
+}
+
+.mobile-radio,
+.slider-controls {
+    display: none;
+}
+
+.rotating-slider-element {
+    z-index: 1;
+    width: 300px;
+    height: 440px;
+    margin: 0 -50px;
+
+    transform: perspective(500px) rotateY(20deg);
+    transform-origin: center;
+
+    transition: all 400ms ease-in-out;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.rotating-slider-element:first-child {
+    margin-left: 0;
+}
+
+.rotating-slider-element:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 1280px) and (hover: hover) and (pointer: fine) {
+    .rotating-slider-element:hover {
+        z-index: 2;
+        margin: 0 70px;
+        transform: perspective(500px) rotateY(0deg) scaleX(1.3) scaleY(1.15);
+    }
+
+    .rotating-slider-element:hover~.rotating-slider-element {
+        transform: perspective(500px) rotateY(-20deg);
+        filter: brightness(50%);
+    }
+}
+
+/* --- 2. Tablet (bis 1279px) --- */
+@media (max-width: 1279px) {
+    .rotating-slider {
+        height: 320px;
+    }
+
+    .rotating-slider-element {
+        width: 180px;
+        height: 260px;
+        margin: 0 -20px;
+    }
+
+    .rotating-slider-element:first-child {
+        margin-left: 0;
+    }
+
+    .rotating-slider-element:last-child {
+        margin-right: 0;
+    }
+}
+
+/* --- 3. Tablet Klein (bis 868px) --- */
+@media (max-width: 868px) {
+    .rotating-slider {
+        height: 280px;
+    }
+    .rotating-slider-element {
+        width: 140px;
+        height: 240px;
+        margin: 0 -15px;
+    }
+}
+
+/* --- 4. Mobile Navigation & Radio Logic (bis 768px) --- */
+@media (max-width: 768px) {
+    .rotating-slider {
+        position: relative;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        padding-left: calc(50vw - 100px);
+        
+        height: auto;
+        gap: 16px;
+        padding-bottom: 48px;
+    }
+
+    .slider-controls {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 8px;
+        z-index: 10;
+    }
+
+    .slider-controls label {
+        display: block;
+        width: 22px;
+        height: 22px;
+        background: var(--primary-green-light);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .rotating-slider-element {
+        flex: 0 0 200px !important;
+        width: 200px !important;
+        height: 293px !important;
+        margin: 0 !important;
+        
+        opacity: 0;
+        visibility: hidden;
+
+        --x-offset: 0px;
+        --y-rotate: 0deg;
+        --scale: 0.85;
+        --brightness: 0.6;
+        
+        transform: translateX(var(--x-offset)) perspective(500px) rotateY(var(--y-rotate)) scale(var(--scale)) !important;
+        filter: brightness(var(--brightness));
+        transform-origin: center;
+        transition: transform 0.4s ease-in-out, opacity 0.3s ease, filter 0.4s ease, visibility 0.3s !important;
+    }
+
+    /* --- Radio Button Translation Logic --- */
+    #art-slide-1:checked~.rotating-slider-element { --x-offset: 0px; }
+    #art-slide-2:checked~.rotating-slider-element { --x-offset: calc(-1 * (200px + 16px)); }
+    #art-slide-3:checked~.rotating-slider-element { --x-offset: calc(-2 * (200px + 16px)); }
+    #art-slide-4:checked~.rotating-slider-element { --x-offset: calc(-3 * (200px + 16px)); }
+    #art-slide-5:checked~.rotating-slider-element { --x-offset: calc(-4 * (200px + 16px)); }
+
+    #art-slide-1:checked ~ .rotating-slider-element:nth-of-type(1) { --y-rotate: 0deg; --scale: 1; --brightness: 1; opacity: 1; visibility: visible; z-index: 5; }
+    #art-slide-1:checked ~ .rotating-slider-element:nth-of-type(2) { --y-rotate: 25deg; --scale: 0.85; --brightness: 0.6; opacity: 1; visibility: visible; z-index: 1; }
+    
+    #art-slide-2:checked ~ .rotating-slider-element:nth-of-type(1) { --y-rotate: -25deg; --scale: 0.85; --brightness: 0.6; opacity: 1; visibility: visible; z-index: 1; }
+    #art-slide-2:checked ~ .rotating-slider-element:nth-of-type(2) { --y-rotate: 0deg; --scale: 1; --brightness: 1; opacity: 1; visibility: visible; z-index: 5; }
+    #art-slide-2:checked ~ .rotating-slider-element:nth-of-type(3) { --y-rotate: 25deg; --scale: 0.85; --brightness: 0.6; opacity: 1; visibility: visible; z-index: 1; }
+    
+    #art-slide-3:checked ~ .rotating-slider-element:nth-of-type(2) { --y-rotate: -25deg; --scale: 0.85; --brightness: 0.6; opacity: 1; visibility: visible; z-index: 1; }
+    #art-slide-3:checked ~ .rotating-slider-element:nth-of-type(3) { --y-rotate: 0deg; --scale: 1; --brightness: 1; opacity: 1; visibility: visible; z-index: 5; }
+    #art-slide-3:checked ~ .rotating-slider-element:nth-of-type(4) { --y-rotate: 25deg; --scale: 0.85; --brightness: 0.6; opacity: 1; visibility: visible; z-index: 1; }
+    
+    #art-slide-4:checked ~ .rotating-slider-element:nth-of-type(3) { --y-rotate: -25deg; --scale: 0.85; --brightness: 0.6; opacity: 1; visibility: visible; z-index: 1; }
+    #art-slide-4:checked ~ .rotating-slider-element:nth-of-type(4) { --y-rotate: 0deg; --scale: 1; --brightness: 1; opacity: 1; visibility: visible; z-index: 5; }
+    #art-slide-4:checked ~ .rotating-slider-element:nth-of-type(5) { --y-rotate: 25deg; --scale: 0.85; --brightness: 0.6; opacity: 1; visibility: visible; z-index: 1; }
+    
+    #art-slide-5:checked ~ .rotating-slider-element:nth-of-type(4) { --y-rotate: -25deg; --scale: 0.85; --brightness: 0.6; opacity: 1; visibility: visible; z-index: 1; }
+    #art-slide-5:checked ~ .rotating-slider-element:nth-of-type(5) { --y-rotate: 0deg; --scale: 1; --brightness: 1; opacity: 1; visibility: visible; z-index: 5; }
+
+    #art-slide-1:checked~.slider-controls label[for="art-slide-1"],
+    #art-slide-2:checked~.slider-controls label[for="art-slide-2"],
+    #art-slide-3:checked~.slider-controls label[for="art-slide-3"],
+    #art-slide-4:checked~.slider-controls label[for="art-slide-4"],
+    #art-slide-5:checked~.slider-controls label[for="art-slide-5"] {
+        background: var(--primary-green);
+        width: 40px;
+    }
+}
+
+
+/********************List-section****************/
+/************************************************/
+.list-section {
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+    .list-section {
+        margin-bottom: 32px;
+    }
+}
+
+.list-section p {
+    padding-bottom: 20px;
+}

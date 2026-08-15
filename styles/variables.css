@@ -1,0 +1,20 @@
+:root {
+  --bg-color-header: var(--primary-green);
+  --bg-color-main: var(--primary-white);
+  --bg-color-footer: var(--primary-green);
+  --carousel: var(--primary-white);
+
+  --primary-green: rgba(78, 164, 135, 1);
+  --primary-green-light: rgba(78, 164, 135, 0.2);
+  --primary-yellow: rgba(241, 201, 83, 1);
+  --primary-white: rgba(255, 255, 255, 1);
+  --secondary-brown: rgba(84, 55, 13, 1);
+
+  --main-frame: 8px max(calc(50% - 720px), 64px);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --main-frame: 8px max(calc(50% - 720px), 32px);
+    }
+}

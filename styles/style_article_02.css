@@ -1,0 +1,72 @@
+/********************Main Section****************/
+/************************************************/
+main {
+    margin: var(--main-frame);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/******video-section******/
+/*************************/
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 80px;
+}
+
+@media (max-width: 768px) {
+    .video-section {
+        gap: 40px;
+    }
+}
+
+.embedded-video{
+    width: 931px;
+    height: 520px;
+}
+
+@media (max-width: 1279px) {
+    .embedded-video {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+.embedded-video a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.embedded-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/******text-section******/
+/************************/
+.text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .text-section {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+}
