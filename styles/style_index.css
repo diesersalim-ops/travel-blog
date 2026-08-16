@@ -628,6 +628,7 @@ main {
 /***********************************/
 .faq-section {
     margin: var(--main-frame);
+    align-self: stretch;
 }
 
 .faq-list {
@@ -636,6 +637,8 @@ main {
     gap: 12px;
 
     margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .faq-item {
