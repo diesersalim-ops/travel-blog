@@ -53,12 +53,46 @@ nav ul {
 nav a {
     text-decoration: none;
     transition: 0.1s;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 110%;
+    height: 18px;
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+nav li:nth-child(1) a::after {
+    background-image: url('../assets/icon/swoosh-long.svg'); 
+}
+
+/* Der ZWEITE Link in der Liste (FAQ) */
+nav li:nth-child(2) a::after {
+    background-image: url('../assets/icon/swoosh-short.svg'); 
+}
+
+/* Der DRITTE Link in der Liste (Contact) */
+nav li:nth-child(3) a::after {
+    background-image: url('../assets/icon/swoosh-middle.svg'); 
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--primary-yellow);
 }
 
+nav a:hover::after {
+    opacity: 1;
+}
 
 /********************Main Section****************/
 /************************************************/
