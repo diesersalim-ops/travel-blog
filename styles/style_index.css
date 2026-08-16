@@ -207,6 +207,7 @@ main {
     }
 
     @keyframes headlineMoveRight-tablet {
+
         0%,
         80% {
             left: max(calc(50% - 135px), 32px);
@@ -483,13 +484,6 @@ main {
     border-radius: 0 100px 0 0;
 }
 
-@media (max-width: 768px) {
-    .scroller {
-        aspect-ratio: 4 / 3;
-        border-radius: 0 50px 0 0;
-    }
-}
-
 .scroller input[type="radio"] {
     position: absolute;
     bottom: 16px;
@@ -592,6 +586,14 @@ main {
 }
 
 @media (max-width: 768px) {
+    .scroller {
+        width: 335px;
+        max-width: 100%;
+        height: 533px;
+        aspect-ratio: auto;
+        border-radius: 0 50px 0 0;
+    }
+
     .scroller-overlay-text {
         top: 16px;
         left: 12px;
@@ -599,11 +601,16 @@ main {
         padding: 12px;
     }
 
+    .scroller-overlay-text h3,
     .scroller-overlay-text p {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        display: block;
+        -webkit-line-clamp: unset;
+        -webkit-box-orient: unset;
+        overflow: visible;
+    }
+
+    .scroller_element img {
+        object-position: 40% bottom;
     }
 }
 
@@ -818,7 +825,7 @@ h3 img {
     .headline-hero {
         width: 250px;
         max-width: 85vw;
-        z-index: 10; 
+        z-index: 10;
         animation: headlineAppear-mobile 4.25s ease-in-out 0.25s both;
     }
 
@@ -832,7 +839,7 @@ h3 img {
     }
 
     .short-curtain-slide-left {
-        width: auto; 
+        width: auto;
         height: 105%;
         animation: shortCurtainSlideLeft-mobile 3.75s ease-out 2s both;
     }
@@ -850,12 +857,15 @@ h3 img {
             transform: translateY(-50%);
             opacity: 0;
         }
-        15%, 75% {
+
+        15%,
+        75% {
             top: 50%;
             left: 24px;
             transform: translateY(-50%);
             opacity: 1;
         }
+
         100% {
             top: 50%;
             left: 24px;
@@ -865,19 +875,22 @@ h3 img {
     }
 
     @keyframes yellow-squared-curtain-shrink-mobile {
-        0% { 
+        0% {
             height: 100%;
-            width: 100%; 
+            width: 100%;
             opacity: 1;
         }
-        50%, 80% { 
+
+        50%,
+        80% {
             height: 100%;
             width: max(10%, calc(60% - 190px));
-            opacity: 1; 
+            opacity: 1;
         }
-        100% { 
+
+        100% {
             height: 0%;
-            width: 0%; 
+            width: 0%;
             opacity: 0;
         }
     }
@@ -889,12 +902,15 @@ h3 img {
             opacity: 1;
             height: 100%;
         }
-        50%, 80% {
+
+        50%,
+        80% {
             left: 60%;
             transform: translateX(-85%);
             opacity: 1;
             height: 100%;
         }
+
         100% {
             left: 50%;
             transform: translateX(-100%);
@@ -910,6 +926,7 @@ h3 img {
             transform: translateX(-50%);
             opacity: 0;
         }
+
         100% {
             left: 35%;
             top: 20%;
