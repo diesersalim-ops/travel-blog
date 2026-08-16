@@ -295,6 +295,31 @@ main {
     padding-bottom: 8px;
 }
 
+.share-toggle-checkbox {
+    display: none;
+}
+
+.share-toggle-checkbox:checked + .share-btn-label img {
+    content: url('../assets/images/share_button_2.png');
+}
+
+.share-btn-label {
+    cursor: pointer;
+}
+
+.share-btn-label img {
+    display: block;
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .share-btn-label img {
+        height: 30px;
+    }
+}
+
 /**************Pro-Tipps-Section*****************/
 /************************************************/
 .pro-tipps-section {
