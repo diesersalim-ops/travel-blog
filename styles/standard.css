@@ -8,8 +8,13 @@
 /********************Header Section**************/
 /************************************************/
 header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
     padding: var(--main-frame);
     background-color: var(--bg-color-header);
+    height: 128px;
 }
 
 header section {
@@ -63,26 +68,26 @@ nav a::after {
     bottom: 0px;
     width: 110%;
     height: 18px;
-    
+
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
 
 nav li:nth-child(1) a::after {
-    background-image: url('../assets/icon/swoosh-long.svg'); 
+    background-image: url('../assets/icon/swoosh-long.svg');
 }
 
 /* Der ZWEITE Link in der Liste (FAQ) */
 nav li:nth-child(2) a::after {
-    background-image: url('../assets/icon/swoosh-short.svg'); 
+    background-image: url('../assets/icon/swoosh-short.svg');
 }
 
 /* Der DRITTE Link in der Liste (Contact) */
 nav li:nth-child(3) a::after {
-    background-image: url('../assets/icon/swoosh-middle.svg'); 
+    background-image: url('../assets/icon/swoosh-middle.svg');
 }
 
 nav a:hover {
@@ -299,7 +304,7 @@ main {
     display: none;
 }
 
-.share-toggle-checkbox:checked + .share-btn-label img {
+.share-toggle-checkbox:checked+.share-btn-label img {
     content: url('../assets/images/share_button_2.png');
 }
 
@@ -379,7 +384,7 @@ main {
 /************************************************/
 footer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     padding: 0;
     background-color: var(--bg-color-footer);
 }
@@ -389,17 +394,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: var(--main-frame);
+    padding-top: 32px;
+    padding-bottom: 32px; 
     width: 100%;
 }
 
 @media (max-width: 768px) {
     .footer-content {
-        flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
-        gap: 16px;
-
-        padding: 30px 24px;
+        align-items: center;
+        gap: 8px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
