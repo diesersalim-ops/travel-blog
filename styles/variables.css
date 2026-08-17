@@ -15,6 +15,6 @@
 
 @media (max-width: 768px) {
     :root {
-        --main-frame: 8px max(calc(50% - 720px), 32px);
+        --main-frame: 8px max(calc(50% - 720px), 16px);
     }
 }
