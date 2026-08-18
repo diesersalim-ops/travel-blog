@@ -97,7 +97,7 @@ main {
     position: absolute;
     z-index: 1;
     height: 100%;
-    width: 21%;
+    width: max(21%, calc(50vw - 720px + 300px));
     left: 0;
     background-color: var(--primary-yellow);
 }
