@@ -404,7 +404,7 @@ nav a {
   }
 }
 
-/* --- Smartphone-Ansicht (unter 769px) --- */
+/* --- Smartphone-Ansicht (< 769px) --- */
 @media (max-width: 768px) {
   .follow-me-block p {
     font-size: 18px;

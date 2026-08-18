@@ -163,7 +163,7 @@ main {
     animation: circlerotation 12s linear 1s infinite;
 }
 
-/* --- Tablet-Anpassungen für die Hero-Animation --- */
+/* --- Hero-Animation <= 1279px --- */
 @media (max-width: 1279px) {
     .yellow-squared-curtain {
         z-index: 2;
@@ -293,7 +293,7 @@ main {
     }
 }
 
-/* --- Keyframes für Hero-Section --- */
+/* --- Keyframes for Hero-Section --- */
 /**************************************/
 @keyframes headlineFlyIn {
     0% {
@@ -805,7 +805,7 @@ h3 img {
 
 
 /* ==========================================
-   Mobile-Animationen für Hero-Section (<= 768px)
+   Mobile-Animations for Hero-Section (<= 768px)
    ========================================== */
 @media (max-width: 768px) {
     .hero-section {
@@ -848,7 +848,7 @@ h3 img {
         animation: circleincoming-mobile 700ms ease-in-out 5.25s both;
     }
 
-    /* --- Keyframes für Mobile --- */
+    /* --- Keyframes for Mobile --- */
 
     @keyframes headlineAppear-mobile {
         0% {
@@ -936,7 +936,7 @@ h3 img {
     }
 }
 
-/* --- Icons in den H2-Überschriften für sehr kleine Smartphones (320px bis 480px) --- */
+/* --- Icons in H2-Headlines (320px - 480px) --- */
 @media (max-width: 480px) {
     h2 img {
         height: 28px;

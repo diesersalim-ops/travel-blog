@@ -135,7 +135,7 @@ main {
     justify-content: space-between;
 }
 
-/* --- Tablet-Ansicht (1279px bis 769px) --- */
+/* --- Tablet-View (1279px - 769px) --- */
 @media (max-width: 1279px) {
     .article-head {
         display: grid;
@@ -146,7 +146,7 @@ main {
     }
 }
 
-/* --- Smartphone-Ansicht (unter 769px) --- */
+/* --- Smartphone-View (< 769px) --- */
 @media (max-width: 768px) {
     .article-head {
         display: flex;
@@ -502,7 +502,7 @@ footer ul li a:hover {
     list-style-type: none;
 }
 
-/* --- Speziell für sehr kleine Smartphones (320px bis 480px) --- */
+/* --- (320px - 480px) --- */
 @media (max-width: 480px) {
     .company-data ul li,
     .company-data ul li a {
