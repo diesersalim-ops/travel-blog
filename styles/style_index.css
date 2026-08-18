@@ -227,11 +227,11 @@ main {
 
         50%,
         80% {
-            width: max(35%, 400px);
+            width: max(35%, 300px); 
         }
 
         100% {
-            width: max(20%, 250px);
+            width: max(20%, 220px); 
         }
     }
 
