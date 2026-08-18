@@ -80,12 +80,10 @@ nav li:nth-child(1) a::after {
     background-image: url('../assets/icon/swoosh-long.svg');
 }
 
-/* Der ZWEITE Link in der Liste (FAQ) */
 nav li:nth-child(2) a::after {
     background-image: url('../assets/icon/swoosh-short.svg');
 }
 
-/* Der DRITTE Link in der Liste (Contact) */
 nav li:nth-child(3) a::after {
     background-image: url('../assets/icon/swoosh-middle.svg');
 }
@@ -490,6 +488,13 @@ footer ul li a:hover {
     .socialmedia {
         padding: 0;
     }
+}
+
+.socialmedia img {
+    height: 32px;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .socialmedia ul {
