@@ -632,7 +632,7 @@ main {
 
 
 /*************** FAQ-Section ***************/
-/***********************************/
+/*******************************************/
 .faq-section {
     margin: var(--main-frame);
     align-self: stretch;
@@ -688,9 +688,26 @@ main {
 }
 
 .faq-answer {
-    padding: 0 20px 18px;
+    padding: 0 20px 18px; 
+    overflow: hidden;
 }
 
+.faq-item[open] .faq-answer {
+    animation: slideDownFAQ 0.8s ease-out forwards;
+}
+
+@keyframes slideDownFAQ {
+    0% {
+        opacity: 0;
+        max-height: 0;
+        padding-bottom: 0;
+    }
+    100% {
+        opacity: 1;
+        max-height: 500px;
+        padding-bottom: 18px;
+    }
+}
 
 /************ contact-section ************/
 /**************************************/
