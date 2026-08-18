@@ -562,26 +562,29 @@ main {
 
 @media (max-width: 1279px) {
     .scroller-overlay-text {
-        max-width: 70%;
-        max-height: 50%;
-        padding: 8px;
-        overflow: hidden;
+        max-width: 80%; 
+        max-height: none; 
+        padding: 16px;
+        gap: 8px;
     }
 
     .scroller-overlay-text h3 {
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        line-height: 1.2;
-        padding-bottom: 3px;
+        font-size: 26px;
+        line-height: 1.1;
+        display: block;
+        -webkit-line-clamp: unset;
+        -webkit-box-orient: unset;
+        overflow: visible;
+        padding-bottom: 0;
     }
 
     .scroller-overlay-text p {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        font-size: 18px;
+        line-height: 1.3;
+        display: block;
+        -webkit-line-clamp: unset;
+        -webkit-box-orient: unset;
+        overflow: visible;
     }
 }
 
@@ -598,7 +601,19 @@ main {
         top: 16px;
         left: 12px;
         max-width: 85%;
+        max-height: none; 
         padding: 12px;
+        gap: 8px;
+    }
+
+    .scroller-overlay-text h3 {
+        font-size: 22px;
+        line-height: 1.1;
+    }
+
+    .scroller-overlay-text p {
+        font-size: 15px;
+        line-height: 1.3;
     }
 
     .scroller-overlay-text h3,
