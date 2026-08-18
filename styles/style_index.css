@@ -944,3 +944,23 @@ h3 img {
         margin-right: 4px;
     }
 }
+
+@media (max-width: 480px) {
+    .scroller-overlay-text {
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        max-width: 90%;
+        gap: 4px; 
+    }
+
+    .scroller-overlay-text h3 {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+
+    .scroller-overlay-text p {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
