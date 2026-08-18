@@ -534,7 +534,7 @@ footer ul li a:hover {
     }
 
     footer {
-        padding-bottom: 45px;
+        padding-bottom: 90px;
     }
 
     .mobile-footer-nav {
@@ -570,5 +570,9 @@ footer ul li a:hover {
 
     .mobile-footer-nav img {
         height: 24px;
+    }
+
+    footer {
+        padding-bottom: 45px;
     }
 }
