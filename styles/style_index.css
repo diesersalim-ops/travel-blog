@@ -227,11 +227,11 @@ main {
 
         50%,
         80% {
-            width: max(35%, 300px); 
+            width: max(35%, 300px);
         }
 
         100% {
-            width: max(20%, 220px); 
+            width: max(20%, 220px);
         }
     }
 
@@ -687,26 +687,24 @@ main {
     transform: rotate(180deg);
 }
 
-.faq-answer {
-    padding: 0 20px 18px; 
+:root {
+    interpolate-size: allow-keywords;
+}
+
+.faq-item::details-content {
+    block-size: 0;
     overflow: hidden;
+    transition: block-size 0.5s,
+        content-visibility 0.5s;
+    transition-behavior: allow-discrete;
 }
 
-.faq-item[open] .faq-answer {
-    animation: slideDownFAQ 0.8s ease-out forwards;
+.faq-item[open]::details-content {
+    block-size: auto;
 }
 
-@keyframes slideDownFAQ {
-    0% {
-        opacity: 0;
-        max-height: 0;
-        padding-bottom: 0;
-    }
-    100% {
-        opacity: 1;
-        max-height: 500px;
-        padding-bottom: 18px;
-    }
+.faq-answer {
+    padding: 0 20px 18px;
 }
 
 /************ contact-section ************/
@@ -968,7 +966,7 @@ h3 img {
         left: 10px;
         padding: 10px;
         max-width: 90%;
-        gap: 4px; 
+        gap: 4px;
     }
 
     .scroller-overlay-text h3 {
