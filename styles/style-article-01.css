@@ -86,7 +86,7 @@ main {
     }
 }
 
-/* --- 2. Tablet (bis 1279px) --- */
+/* --- 2. Tablet (- 1279px) --- */
 @media (max-width: 1279px) {
     .rotating-slider {
         height: 320px;
@@ -107,7 +107,7 @@ main {
     }
 }
 
-/* --- 3. Tablet Klein (bis 868px) --- */
+/* --- 3. Tablet Klein (- 868px) --- */
 @media (max-width: 868px) {
     .rotating-slider {
         height: 280px;
@@ -119,7 +119,7 @@ main {
     }
 }
 
-/* --- 4. Mobile Navigation & Radio Logic (bis 768px) --- */
+/* --- 4. Mobile Navigation & Radio Logic (- 768px) --- */
 @media (max-width: 768px) {
     .rotating-slider {
         position: relative;
@@ -127,10 +127,11 @@ main {
         flex-wrap: nowrap;
         overflow: hidden;
         
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-        margin-right: calc(-50vw + 50%);
-        padding-left: calc(50vw - 100px);
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        margin-right: -16px;
+
+        padding-left: calc(50% - 100px);
         
         height: auto;
         gap: 16px;
