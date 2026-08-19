@@ -217,7 +217,17 @@ main {
 }
 
 .article-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     white-space: nowrap;
+}
+
+.article-meta img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 @media (max-width: 1279px) {
